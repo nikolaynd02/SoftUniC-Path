@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace _01._Reverse_Strings
 {
@@ -6,7 +7,19 @@ namespace _01._Reverse_Strings
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            string input = Console.ReadLine();
+
+            Stack<char> wordToReverse = new Stack<char>();
+
+            foreach(char symbol in input)
+            {
+                wordToReverse.Push(symbol);
+            }
+
+            while (wordToReverse.Count > 0)
+            {
+                Console.Write(wordToReverse.Pop());
+            }
         }
     }
 }
