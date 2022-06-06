@@ -1,19 +1,19 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace DefiningClasses
 {
     public class StartUp
     {
         static void Main(string[] args)
-        {           
-            Person first = new Person("Peter", 20);
-            Person second = new Person("George", 18);
-            Person third = new Person();
+        {
+            string dateOne = Console.ReadLine();
+            string dateTwo = Console.ReadLine();
 
-            third.Name = "Jose";
-            third.Age = 43;
+            DateModifier date = new DateModifier();
 
-
+            Console.WriteLine(date.GetDiffInDays(dateOne, dateTwo));
         }
     }
 }
