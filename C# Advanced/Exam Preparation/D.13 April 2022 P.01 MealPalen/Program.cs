@@ -16,52 +16,39 @@ namespace D._13_April_2022_P._01_MealPalen
                 ["steak"] = 790
             };
 
-            Queue<string> allowedMeals = new Queue<string>(Console.ReadLine().Split(' ',StringSplitOptions.RemoveEmptyEntries));
+            Queue<string> allowedMeals = new Queue<string>(Console.ReadLine().Split(' ', StringSplitOptions.RemoveEmptyEntries));
 
-            int[] caloriesTarget = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
-
-            int targetCount = 0;
+            var caloriesTarget = Console.ReadLine().Split(' ').Select(int.Parse).ToList();
 
             int mealsEaten = 0;
 
-            while(allowedMeals.Count != 0 && caloriesTarget.Sum() > 0)
+            while (allowedMeals.Count != 0 && caloriesTarget.Sum() > 0)
             {
-                int currCalTarget = caloriesTarget.Length - (1 + targetCount);
+                int currCalTarget = caloriesTarget.Count - 1;
 
                 caloriesTarget[currCalTarget] -= meals[allowedMeals.Dequeue()];
                 mealsEaten++;
 
-                if(caloriesTarget[currCalTarget] <= 0 && caloriesTarget.Sum() > 0)
+                if (caloriesTarget[currCalTarget] <= 0 && caloriesTarget.Sum() > 0)
                 {
+
                     caloriesTarget[currCalTarget - 1] += caloriesTarget[currCalTarget];
-                    targetCount++;
-                }
-                else
-                {
-
+                    caloriesTarget.RemoveAt(currCalTarget);
                 }
             }
 
-            Stack<int> caloriesLeft = new Stack<int>();
-            foreach(int calories in caloriesTarget)
-            {
-                if (calories > 0)
-                {
-                    caloriesLeft.Push(calories);
-                }
-            }
-
-            if(allowedMeals.Count == 0)
+            caloriesTarget.Reverse();
+            if (allowedMeals.Count == 0)
             {
                 Console.WriteLine($"John had {mealsEaten} meals.");
-                Console.WriteLine($"For the next few days, he can eat {string.Join(", ", caloriesLeft)} calories.");
+                Console.WriteLine($"For the next few days, he can eat {string.Join(", ", caloriesTarget)} calories.");
             }
             else
             {
                 Console.WriteLine($"John ate enough, he had {mealsEaten} meals.");
                 Console.WriteLine($"Meals left: {string.Join(", ", allowedMeals)}.");
             }
-            
+
         }
     }
 }
