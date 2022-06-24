@@ -12,6 +12,10 @@ namespace Zoo
         private string name;
         private int capacity;
 
+        public Zoo()
+        {
+
+        }
         public Zoo(string name,int capacity)
         {
             Name = name;
@@ -20,7 +24,7 @@ namespace Zoo
 
         public string AddAnimal(Animal animal)
         {
-            if(animal.Species is null || animal.Species == " ")
+            if(string.IsNullOrWhiteSpace(animal.Species))
             {
                 return "Invalid animal species.";
             }
@@ -56,15 +60,7 @@ namespace Zoo
 
         public string GetAnimalCountByLength(double minimumLength, double maximumLength)
         {
-            int count = 0;
-
-            foreach(var currAnimal in Animals)
-            {
-                if (currAnimal.Lenght <= maximumLength && currAnimal.Lenght >= minimumLength)
-                {
-                    count++;
-                }
-            }
+            int count = Animals.FindAll(x => x.Length >= minimumLength && x.Length <= maximumLength).Count();
 
             return $"There are {count} animals with a length between {minimumLength} and {maximumLength} meters.";
         }

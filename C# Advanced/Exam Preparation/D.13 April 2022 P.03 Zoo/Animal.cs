@@ -5,14 +5,18 @@
         private string species;
         private string diet;
         private double weight;
-        private double lenght;
+        private double length;
 
+        public Animal()
+        {
+
+        }
         public Animal(string species,string diet, double weight,double lenght)
         {
             Species = species;
             Diet = diet;
             Weight = weight;
-            Lenght = lenght;
+            Length = lenght;
         }
 
 
@@ -40,10 +44,10 @@
             set { weight = value; }
         }
 
-        public double Lenght
+        public double Length
         {
-            get { return lenght; }
-            set { lenght = value; }
+            get { return length; }
+            set { length = value; }
         }
 
 
