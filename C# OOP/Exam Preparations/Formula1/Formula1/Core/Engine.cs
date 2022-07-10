@@ -1,9 +1,10 @@
-﻿namespace Formula1.Core
+﻿using System;
+using Formula1.IO;
+using Formula1.IO.Contracts;
+using Formula1.Core.Contracts;
+
+namespace Formula1.Core
 {
-    using System;
-    using Formula1.IO;
-    using Formula1.IO.Contracts;
-    using Formula1.Core.Contracts;
     public class Engine : IEngine
     {
         private IWriter writer;
@@ -14,7 +15,7 @@
         {
             this.writer = new Writer();
             this.reader = new Reader();
-            //this.controller = new Controller();
+            this.controller = new Controller();
         }
 
         public void Run()
