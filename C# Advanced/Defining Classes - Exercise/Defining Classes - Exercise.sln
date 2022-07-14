@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DefiningClasses", "P01. Define a Class Person\DefiningClasses.csproj", "{62D03DB3-421D-4A83-AA60-83AE209B6F5B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P.06 Speed Racing", "P.06 Speed Racing\P.06 Speed Racing.csproj", "{944CA7B2-CF91-4F2E-85C9-B5DB5107BFA0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{62D03DB3-421D-4A83-AA60-83AE209B6F5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62D03DB3-421D-4A83-AA60-83AE209B6F5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62D03DB3-421D-4A83-AA60-83AE209B6F5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62D03DB3-421D-4A83-AA60-83AE209B6F5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{944CA7B2-CF91-4F2E-85C9-B5DB5107BFA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{944CA7B2-CF91-4F2E-85C9-B5DB5107BFA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{944CA7B2-CF91-4F2E-85C9-B5DB5107BFA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{944CA7B2-CF91-4F2E-85C9-B5DB5107BFA0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E6A08648-E73F-4586-9A2D-C5D20B506274}
+	EndGlobalSection
+EndGlobal
