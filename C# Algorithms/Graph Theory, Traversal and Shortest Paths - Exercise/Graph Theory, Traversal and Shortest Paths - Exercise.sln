@@ -3,7 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31729.503
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P01. Distance Between Vertices", "P01. Distance Between Vertices\P01. Distance Between Vertices.csproj", "{2657832A-E383-423D-BB71-357984AB5956}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P01. Distance Between Vertices", "P01. Distance Between Vertices\P01. Distance Between Vertices.csproj", "{2657832A-E383-423D-BB71-357984AB5956}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P02. Areas in Matrix", "P02. Areas in Matrix\P02. Areas in Matrix.csproj", "{E9806D74-D27A-45C8-94CF-5A2FBC43902A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P03. Cycles in Graph", "P03. Cycles in Graph\P03. Cycles in Graph.csproj", "{2067B4E7-4654-4855-9F48-615DBE3AD224}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P04. Salaries", "P04. Salaries\P04. Salaries.csproj", "{22166399-693D-4D8E-AD45-E9A7352D1890}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P05. Break Cycles", "P05. Break Cycles\P05. Break Cycles.csproj", "{67615819-AF5F-4AF8-8AA2-55F7B80D2CF8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P06.RoadReconstr", "P06.RoadReconstr\P06.RoadReconstr.csproj", "{7E6B376C-8293-41AD-94D0-C971F015C414}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +25,26 @@ Global
 		{2657832A-E383-423D-BB71-357984AB5956}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2657832A-E383-423D-BB71-357984AB5956}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2657832A-E383-423D-BB71-357984AB5956}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9806D74-D27A-45C8-94CF-5A2FBC43902A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9806D74-D27A-45C8-94CF-5A2FBC43902A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9806D74-D27A-45C8-94CF-5A2FBC43902A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9806D74-D27A-45C8-94CF-5A2FBC43902A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2067B4E7-4654-4855-9F48-615DBE3AD224}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2067B4E7-4654-4855-9F48-615DBE3AD224}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2067B4E7-4654-4855-9F48-615DBE3AD224}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2067B4E7-4654-4855-9F48-615DBE3AD224}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22166399-693D-4D8E-AD45-E9A7352D1890}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22166399-693D-4D8E-AD45-E9A7352D1890}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22166399-693D-4D8E-AD45-E9A7352D1890}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22166399-693D-4D8E-AD45-E9A7352D1890}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67615819-AF5F-4AF8-8AA2-55F7B80D2CF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67615819-AF5F-4AF8-8AA2-55F7B80D2CF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67615819-AF5F-4AF8-8AA2-55F7B80D2CF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67615819-AF5F-4AF8-8AA2-55F7B80D2CF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E6B376C-8293-41AD-94D0-C971F015C414}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E6B376C-8293-41AD-94D0-C971F015C414}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E6B376C-8293-41AD-94D0-C971F015C414}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E6B376C-8293-41AD-94D0-C971F015C414}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
