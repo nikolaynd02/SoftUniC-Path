@@ -27,10 +27,41 @@ function ConstructionCrew(data){
 
     return worker;
 }
-console.log(ConstructionCrew({
-    weight: 80,
-    experience: 1,
-    levelOfHydrated: 0,
-    dizziness: true
+
+//P.03
+function CarFactory(input){
+    
+    const wheels = Array(4);
+    input.wheelsize % 2 == 0
+        ? wheels.fill(input.wheelsize - 1, 0, 4)
+        : wheels.fill(input.wheelsize, 0, 4);
+
+
+    function getEngine(power) {
+        if (power > 120) {
+            return { power: 200, volume: 3500 };
+        } else if (power > 90) {
+            return { power: 120, volume: 2400 };
+        } else {
+            return { power: 90, volume: 1800 }
+        }
+    }
+    
+    let finalProduct = {
+        model: input.model,
+        engine: getEngine(input.power),
+        carriage: { type: input.carriage, color: input.color },
+        wheels
+    }
+
+    return finalProduct;
+}
+
+console.log(CarFactory({
+    model: 'VW Golf II',
+    power: 90,
+    color: 'blue',
+    carriage: 'hatchback',
+    wheelsize: 15
 }
 ));
