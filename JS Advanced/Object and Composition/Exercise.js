@@ -57,11 +57,52 @@ function CarFactory(input){
     return finalProduct;
 }
 
-console.log(CarFactory({
-    model: 'VW Golf II',
-    power: 90,
-    color: 'blue',
-    carriage: 'hatchback',
-    wheelsize: 15
+//P.04
+function HeroicInvertory(input){
+    let result = [];
+
+    for(let info of input){
+        let [name, level, items] = info.split(` / `);
+        level = Number(level);
+        items = items ? items.split(`, `) : [];
+        result.push({name, level, items}); 
+    }
+
+    return JSON.stringify(result);
 }
-));
+
+//P.05
+function LowestPriceInCities(input){
+    let result = [];
+
+    for (const line of input) {
+        let [town, product, price] = line.split(' | ');
+        price = Number(price);
+
+        let obj = result.find(x => x.product === product);
+        if (obj) {
+
+            if (price < obj.price) {
+                obj.price = price;
+                obj.town = town;
+            }
+        }
+        else {
+            obj = { product, price, town };
+            result.push(obj);
+        }
+    }
+
+    for (let item of result) {
+        console.log(`${item.product} -> ${item.price} (${item.town})`);
+    }
+}
+
+
+LowestPriceInCities(['Sample Town | Sample Product | 1000',
+    'Sample Town | Orange | 2',
+    'Sample Town | Peach | 1',
+    'Sofia | Orange | 3',
+    'Sofia | Peach | 2',
+    'New York | Sample Product | 1000.1',
+    'New York | Burger | 10']);
