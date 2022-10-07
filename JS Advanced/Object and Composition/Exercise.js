@@ -147,7 +147,14 @@ function TownsToJSON(arr) {
     return jsonString;
 }
 
-console.log(TownsToJSON(['| Town | Latitude | Longitude |',
-    '| Sofia | 42.696552 | 23.32601 |',
-    '| Beijing | 39.913818 | 116.363625 |']
-));
+//P.08 Rectangle
+function rectangle(width, height, color) {
+    let rectangle = {
+        width: width,
+        height: height,
+        color: color[0].toUpperCase() + color.slice(1),
+        calcArea() { return this.width * this.height }
+    }
+
+    return rectangle;
+}
